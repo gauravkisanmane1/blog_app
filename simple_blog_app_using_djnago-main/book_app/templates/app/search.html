@@ -1,0 +1,9 @@
+{% extends 'app/base.html' %}
+
+
+{% block blog_card_block %}
+{% for post in posts  %}
+
+    {% include 'app/blog_card.html' with post=post %}
+{% endfor %}
+{% endblock blog_card_block %}
